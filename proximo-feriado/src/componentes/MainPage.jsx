@@ -73,7 +73,7 @@ export const MainPage = () => {
                     <div className='ctn-btns'>
                         <button onClick={() => handleFeriadoAnterior(objFeriado, opcionesFecha)} className='btn-feriados'>Ver Anterior</button>
                         <button onClick={() => handleReiniciar(opcionesFecha, fechaActual, feriados)} className='btn-feriados'>Reiniciar</button>
-                        <button onClick={() => handleFeriadoProx(objFeriado, opcionesFecha)} className='btn-feriados'>Ver Proximo</button>
+                        <button onClick={() => handleFeriadoProx(objFeriado, opcionesFecha)} className='btn-feriados'>Ver Próximo</button>
                     </div>
                 </>
                 : <Spinner />}
