@@ -1,0 +1,159 @@
+.ctn-feriados, .ctn-sinFeriados {
+  text-align: center;
+  margin: auto;
+  width: 60vw;
+  margin-top: 80px;
+  background-color: #cc8078;
+  color: #fff6ed;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgb(65, 64, 64);
+}
+.ctn-feriados ul, .ctn-sinFeriados ul {
+  list-style: none;
+}
+.ctn-feriados ul li, .ctn-sinFeriados ul li {
+  font-size: 1.5rem;
+}
+.ctn-feriados ul li:nth-child(1), .ctn-sinFeriados ul li:nth-child(1) {
+  font-size: 1.3rem;
+}
+.ctn-feriados ul li:nth-child(2), .ctn-sinFeriados ul li:nth-child(2) {
+  font-size: 2.7rem;
+}
+.ctn-feriados ul li:last-of-type, .ctn-sinFeriados ul li:last-of-type {
+  color: variables;
+}
+
+.ctn-sinFeriados {
+  margin-top: 180px;
+}
+
+@media (max-width: 992px) {
+  .ctn-feriados, .ctn-sinFeriados {
+    width: 70vw;
+  }
+}
+@media (max-width: 768px) {
+  .ctn-feriados, .ctn-sinFeriados {
+    width: 85vw;
+  }
+  .ctn-feriados ul li:nth-child(2), .ctn-sinFeriados ul li:nth-child(2) {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  .ctn-feriados, .ctn-sinFeriados {
+    width: 90vw;
+  }
+  .ctn-feriados ul li, .ctn-sinFeriados ul li {
+    font-size: 0.9rem;
+  }
+  .ctn-feriados ul li:nth-child(1), .ctn-sinFeriados ul li:nth-child(1) {
+    font-size: 1rem;
+  }
+  .ctn-feriados ul li:nth-child(2), .ctn-sinFeriados ul li:nth-child(2) {
+    font-size: 2.1rem;
+  }
+  .ctn-feriados ul li:last-of-type, .ctn-sinFeriados ul li:last-of-type {
+    color: variables;
+  }
+  .ctn-sinFeriados h2 {
+    font-size: 1.5rem;
+  }
+  .ctn-sinFeriados button {
+    font-size: 1rem;
+    width: 70%;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e79393;
+  color: #fff6ed;
+}
+
+h1 {
+  background-color: #cc8078;
+  width: 100vw;
+  text-align: center;
+  padding: 20px;
+  padding-top: 25px;
+  box-shadow: 1px 1px 5px rgb(65, 64, 64);
+}
+
+.ctn-spinner {
+  text-align: center;
+}
+.ctn-spinner .spinner-grow {
+  width: 150PX;
+  height: 150px;
+  margin: auto;
+  margin-top: 200px;
+}
+
+.ctn-btns {
+  margin: auto;
+  margin-top: 15px;
+  width: 60vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #fff6ed;
+  color: #cc8078;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 1px 1px 5px rgb(65, 64, 64);
+  width: 30%;
+  transition: all 0.1s ease-out;
+}
+button:hover {
+  transform: translateY(-5px);
+  box-shadow: 1px 1px 10px rgb(65, 64, 64);
+}
+
+@media (max-width: 992px) {
+  .ctn-btns {
+    width: 70vw;
+  }
+  button {
+    width: 30%;
+  }
+}
+@media (max-width: 768px) {
+  .ctn-btns {
+    width: 85vw;
+  }
+  button {
+    font-size: 1.3rem;
+  }
+  .btn-sinFeriados {
+    width: 40%;
+  }
+}
+@media (max-width: 576px) {
+  .ctn-btns {
+    width: 90vw;
+  }
+  .ctn-btns button {
+    font-size: 0.9rem;
+  }
+  .btn-sinFeriados {
+    width: 50%;
+  }
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,81 @@
+@use './variables.scss' as variables;
+
+
+.ctn-feriados, .ctn-sinFeriados{
+    text-align: center;
+    margin: auto;
+    width: 60vw;
+    margin-top: 80px;
+    background-color: variables.$rosa2;
+    color: variables.$blanco2;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgb(65, 64, 64);
+    ul{
+        list-style: none;
+        li{
+            font-size: 1.5rem;
+        }
+        li:nth-child(1){
+            font-size: 1.3rem;
+        }
+        li:nth-child(2){
+            font-size: 2.7rem;
+        }
+        li:last-of-type{
+            color: variables;
+        }
+    }
+    
+}
+.ctn-sinFeriados{
+    margin-top: 180px;
+}
+@media (max-width:992px) {
+    .ctn-feriados, .ctn-sinFeriados{
+        width: 70vw;
+    }
+}
+@media (max-width:768px) {
+    .ctn-feriados, .ctn-sinFeriados{
+        width: 85vw;
+        ul{
+            li:nth-child(2){
+                font-size: 2.5rem;
+            }
+        }
+    }
+}  
+@media (max-width:576px) {
+    h1{
+        font-size: 1.4rem;
+    }
+    .ctn-feriados, .ctn-sinFeriados{
+        width: 90vw;
+        ul{
+            li{
+                font-size: 0.9rem;
+            }
+            li:nth-child(1){
+                font-size: 1rem;
+            }
+            li:nth-child(2){
+                font-size: 2.1rem;
+            }
+            li:last-of-type{
+                color: variables;
+            }
+        }
+    }
+    .ctn-sinFeriados{
+        h2{
+            font-size: 1.5rem;
+        }
+        button{
+            font-size: 1rem;
+            width: 70%;
+        }
+    }
+ 
+    
+}  
