@@ -1,0 +1,2 @@
+buildCommand: "npm run build"
+startCommand: "json-server --watch http://localhost:4040/feriados"
