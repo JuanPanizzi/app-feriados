@@ -3,6 +3,8 @@ import axios from "axios";
 import { UseDifDias } from './UseDifDias';
 import { getObjDate } from '../helper/getObjDate'
 
+const API = process.env.REACT_APP_API;
+
 export const UseFeriados = () => {
 
     const [feriados, setFeriados] = useState([])
@@ -90,7 +92,7 @@ export const UseFeriados = () => {
     //Petición feriados
     const getFeriados = async () => {
         try {
-            const res = await axios.get('http://localhost:4040/feriados')
+            const res = await axios.get(API)
             setFeriados(res.data)
         } catch (error) {
             alert('Hubo un error en la petición ¡Intenta otra vez!')
