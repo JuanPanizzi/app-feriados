@@ -6,10 +6,10 @@ import { UseDifDias } from '../hooks/UseDifDias';
 import { Titulo } from '../shared/Titulo';
 
 
-export const MainPage = () => {
+export const MainPage = (props) => {
 
     const { difDiasGlobal } = UseDifDias();
-
+    
     const { feriados,
         objFeriado,
         ODFeriado,
@@ -40,8 +40,7 @@ export const MainPage = () => {
             getDatesFormats(objFeriado, opcionesFecha);
             setLoading(false)
         }
-
-    }, [feriados])
+    }, [objFeriado])
 
     useEffect(() => {
         if (ODFeriado) {

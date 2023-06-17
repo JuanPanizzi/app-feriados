@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import { UseDifDias } from './UseDifDias';
 import { getObjDate } from '../helper/getObjDate'
-
+import {feriadosData} from '../config' 
 
 export const UseFeriados = () => {
 
@@ -18,7 +18,7 @@ export const UseFeriados = () => {
 
     //Variables
     const fechaActual = new Date()
-
+    
     //Funciones    
     const getObjFeriado = () => {
         const objFeriado = feriados.find((feriado) => new Date(feriado.fecha) > fechaActual);
@@ -88,7 +88,7 @@ export const UseFeriados = () => {
         setDifDias(diasRestantes)
     }
 
-    //Petición feriados
+    //Para simular petición con json.server ejecutar getFeriados() y desactivar 'setFeriados(feriadosData)'
     const getFeriados = async () => {
         try {
             const res = await axios.get('http://localhost:4040/feriados')
@@ -98,9 +98,12 @@ export const UseFeriados = () => {
             console.log(error)
         }
     }
+    //
     
     useEffect(() => {
-        getFeriados();
+        //Para simular petición con json.server ejecutar getFeriados() y desactivar 'setFeriados(feriadosData)'
+       //getFeriados();
+        setFeriados(feriadosData)
     }, [])
 
     useEffect(() => {

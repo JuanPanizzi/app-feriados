@@ -1,9 +1,12 @@
 import { MainPage } from "./componentes/MainPage";
 
+
+
 function App() {
+
   return (
     <>
-    <MainPage/>
+    <MainPage />
     </>
   );
 }
