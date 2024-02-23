@@ -49,7 +49,7 @@ export const MainPage = (props) => {
         }
     }, [ODFeriado])
 
-    if (ODFeriado > new Date(2023, 11, 26) || ODFeriado < new Date(2023, 0, 1) && !loading) {
+    if (ODFeriado > new Date(2024, 11, 26) || ODFeriado < new Date(2024, 0, 1) && !loading) {
         return (
             <div className='ctn-sinFeriados'>
                 <h2>¡No hay mas feriados este año!</h2>
