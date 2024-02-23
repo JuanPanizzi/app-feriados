@@ -14,6 +14,7 @@ export const feriadosData = [
   {
     "fecha": "2024-02-13",
     "nombre": "Carnaval"
+    
   },
   {
     "fecha": "2024-03-24",
